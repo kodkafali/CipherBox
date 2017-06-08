@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">CipherBox</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_kul">CipherBox</string>
+    <string name="title_activity_sing_up">CipherBox</string>
+    <string name="title_activity_arama">CipherBox</string>
+    <string name="title_activity_sil">CipherBox</string>
+    <string name="title_activity_girilmis">CipherBox</string>
+    <string name="title_activity_farkli">FarkliActivity</string>
+    <string name="title_activity_sosyal">SosyalActivity</string>
+    <string name="title_activity_diger">DigerActivity</string>
+    <string name="title_activity_banka">BankaActivity</string>
+    <string name="title_activity_kisisel">KisiselActivity</string>
+    <string name="title_activity_posta">PostaActivity</string>
+</resources>

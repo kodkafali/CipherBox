@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.emre.cip.GirilmisActivity"
+    tools:showIn="@layout/activity_girilmis"
+
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="ALAN:"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ALAN"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="ŞİFRE:"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/ALAN"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SIFRE"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/ALAN" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EKLE"
+        android:id="@+id/EKLE"
+
+        android:background="#CCFF00"
+        android:layout_below="@+id/SIFRE"
+        android:layout_toLeftOf="@+id/sil_girilmis"
+        android:layout_toStartOf="@+id/sil_girilmis" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ARA"
+        android:id="@+id/ara"
+        android:onClick="arama"
+
+        android:layout_above="@+id/frameLayout2"
+        android:layout_alignRight="@+id/frameLayout2"
+        android:layout_alignEnd="@+id/frameLayout2"
+        android:background="#CC99FF" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SİL"
+        android:id="@+id/sil_girilmis"
+        android:onClick="sil"
+
+        android:background="#FF66CC"
+        android:layout_above="@+id/frameLayout2"
+        android:layout_toLeftOf="@+id/ara"
+        android:layout_toStartOf="@+id/ara" />
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/EKLE"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/frameLayout2"
+        android:background="@drawable/g"></FrameLayout>
+
+</RelativeLayout>

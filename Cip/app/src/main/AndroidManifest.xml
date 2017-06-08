@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.emre.cip"
+    android:versionCode="2"
+    android:versionName="1.1">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="16" />
+
+    <android:uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".KulActivity"
+            android:label="@string/title_activity_kul"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".singUpActivity"
+            android:label="@string/title_activity_sing_up"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SingUpActivity"
+            android:label="@string/title_activity_sing_up"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AramaActivity"
+            android:label="@string/title_activity_arama"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SilActivity"
+            android:label="@string/title_activity_sil"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".GirilmisActivity"
+            android:label="@string/title_activity_girilmis"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FarkliActivity"
+            android:label="@string/title_activity_farkli"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SosyalActivity"
+            android:label="@string/title_activity_sosyal"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BankaActivity"
+            android:label="@string/title_activity_banka"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".KisiselActivity"
+            android:label="@string/title_activity_kisisel"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PostaActivity"
+            android:label="@string/title_activity_posta"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>
